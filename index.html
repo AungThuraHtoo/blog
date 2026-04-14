@@ -1,7 +1,321 @@
 <!DOCTYPE html>
-<html>
-<head><title>My Blog</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thurahr Too's personal blog — books, music, travel, and movies.">
+  <title>Thurahtoo — Books · Music · Travel · Movies</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  <h1>Welcome to my blog</h1>
+
+  <!-- ─── Header ─────────────────────────── -->
+  <header>
+    <nav class="container">
+      <a href="index.html" class="nav-logo">Thura<span>h</span>too</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="pages/books.html">Books</a></li>
+        <li><a href="pages/music.html">Music</a></li>
+        <li><a href="pages/travel.html">Travel</a></li>
+        <li><a href="pages/movies.html">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ─── Hero ───────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="hero-tag fade-up">Personal blog</p>
+        <h1 class="fade-up">
+          Words,<br>
+          <em>Worlds</em>
+        </h1>
+        <p class="hero-desc fade-up">
+          A space for books I've devoured, music I can't stop playing,
+          places that changed me, and films that stayed with me.
+        </p>
+      </div>
+      <div class="hero-number" aria-hidden="true">TH</div>
+    </div>
+  </section>
+
+  <!-- ─── Featured ───────────────────────── -->
+  <div class="featured">
+    <div class="container featured-inner">
+      <div>
+        <p class="featured-label">Currently obsessed with</p>
+        <h2 class="featured-title">Life & what I'm reading right now</h2>
+        <p class="featured-body">
+          Every book, song, journey, and film leaves a mark.
+          This blog is where those marks are recorded — honestly, passionately,
+          and without pretension.
+        </p>
+        <a href="pages/books.html" class="btn">
+          Start reading
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+      <div class="featured-stats">
+        <div class="stat">
+          <div class="stat-num">24</div>
+          <div class="stat-label">Books</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">18</div>
+          <div class="stat-label">Albums</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Trips</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">31</div>
+          <div class="stat-label">Films</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Books Preview ──────────────────── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Latest reads</p>
+      <h2 class="section-title">Books</h2>
+      <div class="cards-grid">
+
+        <a href="pages/books.html" class="card">
+          <span class="card-category">Fiction</span>
+          <h3 class="card-title">The Name of the Wind</h3>
+          <p class="card-excerpt">Patrick Rothfuss weaves a story so vivid it feels like a memory of somewhere you've never been.</p>
+          <div class="card-meta">
+            <span>★★★★★</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/books.html" class="card">
+          <span class="card-category">Non-Fiction</span>
+          <h3 class="card-title">Sapiens</h3>
+          <p class="card-excerpt">Harari makes you question everything you thought you knew about humanity's story.</p>
+          <div class="card-meta">
+            <span>★★★★☆</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/books.html" class="card">
+          <span class="card-category">Philosophy</span>
+          <h3 class="card-title">Meditations</h3>
+          <p class="card-excerpt">Marcus Aurelius writing to himself — and somehow speaking directly to you, two thousand years later.</p>
+          <div class="card-meta">
+            <span>★★★★★</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Music Preview ──────────────────── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">On repeat</p>
+      <h2 class="section-title">Music</h2>
+      <div class="cards-grid">
+
+        <a href="pages/music.html" class="card">
+          <span class="card-category">Post-Rock</span>
+          <h3 class="card-title">Explosions in the Sky</h3>
+          <p class="card-excerpt">Music that builds mountains out of silence and brings them crashing down in waves of guitar.</p>
+          <div class="card-meta">
+            <span>Instrumental</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/music.html" class="card">
+          <span class="card-category">Jazz</span>
+          <h3 class="card-title">Kind of Blue</h3>
+          <p class="card-excerpt">Miles Davis created the blueprint for cool. Every note feels inevitable yet surprising.</p>
+          <div class="card-meta">
+            <span>Miles Davis · 1959</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/music.html" class="card">
+          <span class="card-category">Electronic</span>
+          <h3 class="card-title">Burial — Untrue</h3>
+          <p class="card-excerpt">Lonely, beautiful, and utterly unlike anything else. A masterpiece of urban melancholy.</p>
+          <div class="card-meta">
+            <span>2007 · Essential</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Travel Preview ─────────────────── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Places I've been</p>
+      <h2 class="section-title">Travel</h2>
+      <div class="cards-grid">
+
+        <a href="pages/travel.html" class="card">
+          <span class="card-category">Southeast Asia</span>
+          <h3 class="card-title">Chiang Rai, Thailand</h3>
+          <p class="card-excerpt">The White Temple at dawn, misty mountains, and the slowest, most perfect mornings imaginable.</p>
+          <div class="card-meta">
+            <span>3 days</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/travel.html" class="card">
+          <span class="card-category">East Asia</span>
+          <h3 class="card-title">Tokyo, Japan</h3>
+          <p class="card-excerpt">Controlled chaos and absolute calm — sometimes in the same alleyway. There is nowhere like it.</p>
+          <div class="card-meta">
+            <span>7 days</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/travel.html" class="card">
+          <span class="card-category">South Asia</span>
+          <h3 class="card-title">Bagan, Myanmar</h3>
+          <p class="card-excerpt">Two thousand temples scattered across a plain. At sunrise, hot air balloons drift between the spires.</p>
+          <div class="card-meta">
+            <span>4 days</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Movies Preview ─────────────────── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">On screen</p>
+      <h2 class="section-title">Movies</h2>
+      <div class="cards-grid">
+
+        <a href="pages/movies.html" class="card">
+          <span class="card-category">Drama</span>
+          <h3 class="card-title">The Shawshank Redemption</h3>
+          <p class="card-excerpt">Hope as a weapon. Every rewatch reveals something new hiding in plain sight.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 1994</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/movies.html" class="card">
+          <span class="card-category">Sci-Fi</span>
+          <h3 class="card-title">Interstellar</h3>
+          <p class="card-excerpt">Nolan makes the cosmos feel personal. The docking scene alone is worth the entire runtime.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2014</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="pages/movies.html" class="card">
+          <span class="card-category">Animation</span>
+          <h3 class="card-title">Spirited Away</h3>
+          <p class="card-excerpt">Miyazaki's masterpiece. A world so complete and strange that reality feels thin by comparison.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2001</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Thura<span>h</span>too</div>
+          <p class="footer-tagline">Books · Music · Travel · Movies</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="pages/books.html">Books</a></li>
+          <li><a href="pages/music.html">Music</a></li>
+          <li><a href="pages/travel.html">Travel</a></li>
+          <li><a href="pages/movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Thurahtoo — All rights reserved</span>
+        <span>thurahtoo.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

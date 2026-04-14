@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Travel journals — places, people, and moments that changed how I see the world.">
+  <title>Travel — Thurahtoo</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <a href="../index.html" class="nav-logo">Thura<span>h</span>too</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="books.html">Books</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="movies.html">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="container page-hero-inner">
+      <h1>Travel</h1>
+      <p>Places that rearranged something inside me. Notes from the road, written while the feeling was still fresh.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cat-nav">
+        <button class="cat-btn active" onclick="filterCards(this, 'all')">All</button>
+        <button class="cat-btn" onclick="filterCards(this, 'southeast-asia')">Southeast Asia</button>
+        <button class="cat-btn" onclick="filterCards(this, 'east-asia')">East Asia</button>
+        <button class="cat-btn" onclick="filterCards(this, 'europe')">Europe</button>
+        <button class="cat-btn" onclick="filterCards(this, 'south-asia')">South Asia</button>
+      </div>
+
+      <div class="cards-grid" id="cards">
+
+        <a href="#" class="card" data-cat="southeast-asia"
+   data-photos='["../img/travel/chiang-rai-1.jpg","../img/travel/chiang-rai-2.jpg","../img/travel/chiang-rai-3.jpg","../img/travel/chiang-rai-4.jpg"]'
+   data-excerpt="The White Temple at dawn. Misty mountains at breakfast. The slowest, most perfect mornings imaginable."
+   data-duration="3 days" data-year="2023"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">Southeast Asia</span>
+  <h3 class="card-title">Chiang Rai, Thailand</h3>
+  <p class="card-excerpt">The White Temple at dawn. Misty mountains at breakfast. The slowest, most perfect mornings imaginable.</p>
+  <div class="card-meta">
+    <span>3 days · 2023</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<a href="#" class="card" data-cat="east-asia"
+   data-photos='["../img/travel/tokyo-1.jpg","../img/travel/tokyo-2.jpg","../img/travel/tokyo-3.jpg","../img/travel/tokyo-4.jpg"]'
+   data-excerpt="Controlled chaos and absolute calm — sometimes in the same alleyway. There is nowhere on earth quite like it."
+   data-duration="7 days" data-year="2022"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">East Asia</span>
+  <h3 class="card-title">Tokyo, Japan</h3>
+  <p class="card-excerpt">Controlled chaos and absolute calm — sometimes in the same alleyway. There is nowhere on earth quite like it.</p>
+  <div class="card-meta">
+    <span>7 days · 2022</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<a href="#" class="card" data-cat="south-asia"
+   data-photos='["../img/travel/bagan-1.jpg","../img/travel/bagan-2.jpg","../img/travel/bagan-3.jpg","../img/travel/bagan-4.jpg"]'
+   data-excerpt="Two thousand temples across a dusty plain. At sunrise, hot air balloons drift silently between the spires."
+   data-duration="4 days" data-year="2021"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">South Asia</span>
+  <h3 class="card-title">Bagan, Myanmar</h3>
+  <p class="card-excerpt">Two thousand temples across a dusty plain. At sunrise, hot air balloons drift silently between the spires.</p>
+  <div class="card-meta">
+    <span>4 days · 2021</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<a href="#" class="card" data-cat="europe"
+   data-photos='["../img/travel/prague-1.jpg","../img/travel/prague-2.jpg","../img/travel/prague-3.jpg","../img/travel/prague-4.jpg"]'
+   data-excerpt="A city that looks like a fairy tale and feels like a secret. Old Town Square at midnight belongs to another century."
+   data-duration="5 days" data-year="2023"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">Europe</span>
+  <h3 class="card-title">Prague, Czech Republic</h3>
+  <p class="card-excerpt">A city that looks like a fairy tale and feels like a secret. Old Town Square at midnight belongs to another century.</p>
+  <div class="card-meta">
+    <span>5 days · 2023</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<a href="#" class="card" data-cat="southeast-asia"
+   data-photos='["../img/travel/luang-prabang-1.jpg","../img/travel/luang-prabang-2.jpg","../img/travel/luang-prabang-3.jpg","../img/travel/luang-prabang-4.jpg"]'
+   data-excerpt="The monks walk at dawn in saffron robes. The whole town holds its breath. Some places are simply sacred."
+   data-duration="4 days" data-year="2022"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">Southeast Asia</span>
+  <h3 class="card-title">Luang Prabang, Laos</h3>
+  <p class="card-excerpt">The monks walk at dawn in saffron robes. The whole town holds its breath. Some places are simply sacred.</p>
+  <div class="card-meta">
+    <span>4 days · 2022</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+<a href="#" class="card" data-cat="east-asia"
+   data-photos='["../img/travel/kyoto-1.jpg","../img/travel/kyoto-2.jpg","../img/travel/kyoto-3.jpg","../img/travel/kyoto-4.jpg"]'
+   data-excerpt="A thousand torii gates at Fushimi Inari. Cherry blossoms in Maruyama Park. A city that earns every photograph."
+   data-duration="3 days" data-year="2022"
+   onclick="openLightbox(event, this)">
+  <span class="card-category">East Asia</span>
+  <h3 class="card-title">Kyoto, Japan</h3>
+  <p class="card-excerpt">A thousand torii gates at Fushimi Inari. Cherry blossoms in Maruyama Park. A city that earns every photograph.</p>
+  <div class="card-meta">
+    <span>3 days · 2022</span>
+    <span class="card-arrow">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      </svg>
+    </span>
+  </div>
+</a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Thura<span>h</span>too</div>
+          <p class="footer-tagline">Books · Music · Travel · Movies</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Thurahtoo — All rights reserved</span>
+        <span>thurahtoo.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+  let lbPhotos = [], lbIdx = 0;
+
+  function openLightbox(e, card) {
+    e.preventDefault();
+    lbPhotos = JSON.parse(card.dataset.photos || '[]');
+    lbIdx = 0;
+    document.getElementById('lbCat').textContent   = card.querySelector('.card-category').textContent;
+    document.getElementById('lbTitle').textContent = card.querySelector('.card-title').textContent;
+    document.getElementById('lbExcerpt').textContent = card.dataset.excerpt || '';
+    document.getElementById('lbDuration').textContent = card.dataset.duration || '';
+    document.getElementById('lbYear').textContent  = card.dataset.year || '';
+
+    const thumbs = document.getElementById('lbThumbs');
+    thumbs.innerHTML = lbPhotos.map((src, i) =>
+      `<img class="lb-thumb${i===0?' active':''}" src="${src}" data-idx="${i}" onclick="showPhoto(${i})" alt="Photo ${i+1}">`
+    ).join('');
+
+    showPhoto(0);
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function showPhoto(idx) {
+    lbIdx = (idx + lbPhotos.length) % lbPhotos.length;
+    document.getElementById('lbImg').src = lbPhotos[lbIdx];
+    document.getElementById('lbCounter').textContent = (lbIdx + 1) + ' / ' + lbPhotos.length;
+    document.querySelectorAll('.lb-thumb').forEach((t, i) =>
+      t.classList.toggle('active', i === lbIdx)
+    );
+  }
+
+  function shiftPhoto(dir) { showPhoto(lbIdx + dir); }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function filterCards(btn, cat) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    closeLightbox();
+    document.querySelectorAll('.card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
+    });
+  }
+
+  document.addEventListener('keydown', e => {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft')  shiftPhoto(-1);
+    if (e.key === 'ArrowRight') shiftPhoto(1);
+  });
+</script>
+
+<div class="lb-overlay" id="lightbox">
+  <div class="lb-header">
+    <div class="lb-header-text">
+      <span class="card-category" id="lbCat"></span>
+      <div class="lb-title-text" id="lbTitle"></div>
+    </div>
+    <button class="lb-close" onclick="closeLightbox()">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" width="16" height="16">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <div class="lb-body">
+    <div class="lb-photo-zone">
+      <button class="lb-nav prev" onclick="shiftPhoto(-1)">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <img id="lbImg" src="" alt="">
+      <button class="lb-nav next" onclick="shiftPhoto(1)">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="lb-thumbs-col">
+      <div class="lb-thumbs" id="lbThumbs"></div>
+      <div class="lb-counter" id="lbCounter">1 / 4</div>
+    </div>
+  </div>
+  <div class="lb-footer">
+    <p class="card-excerpt" id="lbExcerpt"></p>
+    <div class="lb-meta-row">
+      <div><div>Duration</div><div class="lb-meta-val" id="lbDuration"></div></div>
+      <div><div>Year</div><div class="lb-meta-val" id="lbYear"></div></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Music I love — albums, artists, and what they mean to me.">
+  <title>Music — Thurahtoo</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <a href="../index.html" class="nav-logo">Thura<span>h</span>too</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="books.html">Books</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="movies.html">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="container page-hero-inner">
+      <h1>Music</h1>
+      <p>Albums and artists that have soundtracked chapters of my life. Some stayed. All mattered.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cat-nav">
+        <button class="cat-btn active" onclick="filterCards(this, 'all')">All</button>
+        <button class="cat-btn" onclick="filterCards(this, 'jazz')">Jazz</button>
+        <button class="cat-btn" onclick="filterCards(this, 'rock')">Rock</button>
+        <button class="cat-btn" onclick="filterCards(this, 'electronic')">Electronic</button>
+        <button class="cat-btn" onclick="filterCards(this, 'classical')">Classical</button>
+      </div>
+
+      <div class="cards-grid" id="cards">
+
+        <a href="#" class="card" data-cat="rock">
+          <span class="card-category">Post-Rock</span>
+          <h3 class="card-title">Explosions in the Sky</h3>
+          <p class="card-excerpt">Music that builds mountains out of silence and brings them crashing down in waves of guitar. No words needed.</p>
+          <div class="card-meta">
+            <span>Instrumental · Essential</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="jazz">
+          <span class="card-category">Jazz</span>
+          <h3 class="card-title">Kind of Blue</h3>
+          <p class="card-excerpt">Miles Davis created the blueprint for cool in 1959. Every note feels inevitable, yet completely surprising.</p>
+          <div class="card-meta">
+            <span>Miles Davis · 1959</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="electronic">
+          <span class="card-category">Electronic</span>
+          <h3 class="card-title">Burial — Untrue</h3>
+          <p class="card-excerpt">Lonely, beautiful, and utterly unlike anything else. A masterpiece of urban melancholy and fractured beats.</p>
+          <div class="card-meta">
+            <span>Burial · 2007</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="classical">
+          <span class="card-category">Classical</span>
+          <h3 class="card-title">Goldberg Variations</h3>
+          <p class="card-excerpt">Glenn Gould's 1981 recording is both a technical wonder and an act of pure, vulnerable expression.</p>
+          <div class="card-meta">
+            <span>Bach / Gould · 1981</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="rock">
+          <span class="card-category">Alternative</span>
+          <h3 class="card-title">OK Computer</h3>
+          <p class="card-excerpt">Radiohead predicted the anxiety of the internet age before most people were online. It only gets more relevant.</p>
+          <div class="card-meta">
+            <span>Radiohead · 1997</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="electronic">
+          <span class="card-category">Ambient</span>
+          <h3 class="card-title">Music for Airports</h3>
+          <p class="card-excerpt">Brian Eno invented ambient music here. It's not background music — it asks for your full, quiet attention.</p>
+          <div class="card-meta">
+            <span>Brian Eno · 1978</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Thura<span>h</span>too</div>
+          <p class="footer-tagline">Books · Music · Travel · Movies</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Thurahtoo — All rights reserved</span>
+        <span>thurahtoo.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function filterCards(btn, cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.card').forEach(card => {
+        const show = cat === 'all' || card.dataset.cat === cat;
+        card.style.display = show ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

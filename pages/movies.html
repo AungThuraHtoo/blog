@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movies I love — reviews, thoughts, and favourites.">
+  <title>Movies — Thurahtoo</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <a href="../index.html" class="nav-logo">Thura<span>h</span>too</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="books.html">Books</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="movies.html">Movies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="container page-hero-inner">
+      <h1>Movies</h1>
+      <p>Films that got under my skin, changed how I see, or simply made two hours feel like a gift.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cat-nav">
+        <button class="cat-btn active" onclick="filterCards(this, 'all')">All</button>
+        <button class="cat-btn" onclick="filterCards(this, 'drama')">Drama</button>
+        <button class="cat-btn" onclick="filterCards(this, 'sci-fi')">Sci-Fi</button>
+        <button class="cat-btn" onclick="filterCards(this, 'animation')">Animation</button>
+        <button class="cat-btn" onclick="filterCards(this, 'thriller')">Thriller</button>
+      </div>
+
+      <div class="cards-grid" id="cards">
+
+        <a href="#" class="card" data-cat="drama">
+          <span class="card-category">Drama</span>
+          <h3 class="card-title">The Shawshank Redemption</h3>
+          <p class="card-excerpt">Hope as a weapon. Every rewatch reveals something new hiding in plain sight. The definition of a perfect film.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 1994</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="sci-fi">
+          <span class="card-category">Sci-Fi</span>
+          <h3 class="card-title">Interstellar</h3>
+          <p class="card-excerpt">Nolan makes the cosmos feel personal. The docking scene alone is worth the entire runtime. And the score.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2014</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="animation">
+          <span class="card-category">Animation</span>
+          <h3 class="card-title">Spirited Away</h3>
+          <p class="card-excerpt">Miyazaki's masterpiece. A world so complete and strange that reality feels thin by comparison.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2001</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="thriller">
+          <span class="card-category">Thriller</span>
+          <h3 class="card-title">Parasite</h3>
+          <p class="card-excerpt">Bong Joon-ho builds a trap and you walk right into it, smiling, until the floor gives way. Unforgettable.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2019</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="drama">
+          <span class="card-category">Drama</span>
+          <h3 class="card-title">The Godfather</h3>
+          <p class="card-excerpt">Coppola's study of power, family, and corruption remains the gold standard. Every frame is a painting.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 1972</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="sci-fi">
+          <span class="card-category">Sci-Fi</span>
+          <h3 class="card-title">Blade Runner 2049</h3>
+          <p class="card-excerpt">Villeneuve made a sequel that surpasses the original in visual grandeur. Every shot is worth pausing on.</p>
+          <div class="card-meta">
+            <span>★★★★★ · 2017</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Thura<span>h</span>too</div>
+          <p class="footer-tagline">Books · Music · Travel · Movies</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="books.html">Books</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="travel.html">Travel</a></li>
+          <li><a href="movies.html">Movies</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Thurahtoo — All rights reserved</span>
+        <span>thurahtoo.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function filterCards(btn, cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.card').forEach(card => {
+        const show = cat === 'all' || card.dataset.cat === cat;
+        card.style.display = show ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
