@@ -38,19 +38,21 @@
       <div class="cat-nav">
         <button class="cat-btn active" onclick="filterCards(this, 'all')">All</button>
         <button class="cat-btn" onclick="filterCards(this, 'drama')">Drama</button>
-        <button class="cat-btn" onclick="filterCards(this, 'sci-fi')">Sci-Fi</button>
-        <button class="cat-btn" onclick="filterCards(this, 'animation')">Animation</button>
+        <button class="cat-btn" onclick="filterCards(this, 'romance')">Romance</button>
         <button class="cat-btn" onclick="filterCards(this, 'thriller')">Thriller</button>
+        <button class="cat-btn" onclick="filterCards(this, 'animation')">Animation</button>
+        <button class="cat-btn" onclick="filterCards(this, 'epic')">Epic</button>
+        <button class="cat-btn" onclick="filterCards(this, 'war')">War</button>
       </div>
 
       <div class="cards-grid" id="cards">
 
         <a href="#" class="card" data-cat="drama">
           <span class="card-category">Drama</span>
-          <h3 class="card-title">The Shawshank Redemption</h3>
-          <p class="card-excerpt">Hope as a weapon. Every rewatch reveals something new hiding in plain sight. The definition of a perfect film.</p>
+          <h3 class="card-title">Rain Man</h3>
+          <p class="card-excerpt">A self-absorbed hustler road-trips across America with the autistic brother he never knew he had, and slowly learns to see him.</p>
           <div class="card-meta">
-            <span>★★★★★ · 1994</span>
+            <span>Barry Levinson · 1988</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -59,12 +61,26 @@
           </div>
         </a>
 
-        <a href="#" class="card" data-cat="sci-fi">
-          <span class="card-category">Sci-Fi</span>
-          <h3 class="card-title">Interstellar</h3>
-          <p class="card-excerpt">Nolan makes the cosmos feel personal. The docking scene alone is worth the entire runtime. And the score.</p>
+        <a href="#" class="card" data-cat="romance">
+          <span class="card-category">Romance</span>
+          <h3 class="card-title">Casablanca</h3>
+          <p class="card-excerpt">Wartime Morocco, a smoky nightclub and an old flame walking back in. Love and duty pulling in opposite directions.</p>
           <div class="card-meta">
-            <span>★★★★★ · 2014</span>
+            <span>Michael Curtiz · 1942</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="drama">
+          <span class="card-category">Drama</span>
+          <h3 class="card-title">There Will Be Blood</h3>
+          <p class="card-excerpt">An oilman’s ambition curdles into something monstrous. Daniel Day-Lewis gives one of the great screen performances.</p>
+          <div class="card-meta">
+            <span>Paul Thomas Anderson · 2007</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -75,10 +91,38 @@
 
         <a href="#" class="card" data-cat="animation">
           <span class="card-category">Animation</span>
-          <h3 class="card-title">Spirited Away</h3>
-          <p class="card-excerpt">Miyazaki's masterpiece. A world so complete and strange that reality feels thin by comparison.</p>
+          <h3 class="card-title">Ocean Waves</h3>
+          <p class="card-excerpt">A small, quiet Studio Ghibli film about a teenage love triangle, remembered from the end of school.</p>
           <div class="card-meta">
-            <span>★★★★★ · 2001</span>
+            <span>Tomomi Mochizuki · 1993</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="war">
+          <span class="card-category">War</span>
+          <h3 class="card-title">All Quiet on the Western Front</h3>
+          <p class="card-excerpt">The classic adaptation of Remarque’s novel. Young soldiers march off full of patriotism and meet the reality of the trenches.</p>
+          <div class="card-meta">
+            <span>Lewis Milestone · 1930</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="epic">
+          <span class="card-category">Epic</span>
+          <h3 class="card-title">The Odyssey</h3>
+          <p class="card-excerpt">Nolan takes on Homer: Odysseus’s long, monster-filled voyage home after Troy, shot entirely on IMAX film.</p>
+          <div class="card-meta">
+            <span>Christopher Nolan · 2026</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -92,7 +136,35 @@
           <h3 class="card-title">Parasite</h3>
           <p class="card-excerpt">Bong Joon-ho builds a trap and you walk right into it, smiling, until the floor gives way. Unforgettable.</p>
           <div class="card-meta">
-            <span>★★★★★ · 2019</span>
+            <span>Bong Joon-ho · 2019</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="animation">
+          <span class="card-category">Animation</span>
+          <h3 class="card-title">Spirited Away</h3>
+          <p class="card-excerpt">Miyazaki's masterpiece. A world so complete and strange that reality feels thin by comparison.</p>
+          <div class="card-meta">
+            <span>Hayao Miyazaki · 2001</span>
+            <span class="card-arrow">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="#" class="card" data-cat="epic">
+          <span class="card-category">Epic</span>
+          <h3 class="card-title">Seven Samurai</h3>
+          <p class="card-excerpt">A poor village hires seven masterless samurai to defend it from bandits. The blueprint for every ensemble action film since.</p>
+          <div class="card-meta">
+            <span>Akira Kurosawa · 1954</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -103,10 +175,10 @@
 
         <a href="#" class="card" data-cat="drama">
           <span class="card-category">Drama</span>
-          <h3 class="card-title">The Godfather</h3>
-          <p class="card-excerpt">Coppola's study of power, family, and corruption remains the gold standard. Every frame is a painting.</p>
+          <h3 class="card-title">Roma</h3>
+          <p class="card-excerpt">A year in the life of a domestic worker in 1970s Mexico City, filmed in luminous black and white.</p>
           <div class="card-meta">
-            <span>★★★★★ · 1972</span>
+            <span>Alfonso Cuarón · 2018</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -115,12 +187,12 @@
           </div>
         </a>
 
-        <a href="#" class="card" data-cat="sci-fi">
-          <span class="card-category">Sci-Fi</span>
-          <h3 class="card-title">Blade Runner 2049</h3>
-          <p class="card-excerpt">Villeneuve made a sequel that surpasses the original in visual grandeur. Every shot is worth pausing on.</p>
+        <a href="#" class="card" data-cat="romance">
+          <span class="card-category">Romance</span>
+          <h3 class="card-title">Chungking Express</h3>
+          <p class="card-excerpt">Two lovesick Hong Kong cops, two chance encounters, and a lot of “California Dreamin’”. Restless, neon-lit and romantic.</p>
           <div class="card-meta">
-            <span>★★★★★ · 2017</span>
+            <span>Wong Kar-wai · 1994</span>
             <span class="card-arrow">
               <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
